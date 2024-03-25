@@ -1,0 +1,17 @@
+{
+  "name": "customer-cli",
+  "version": "1.0.0",
+  "description": "customer managment CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.16",
+    "mongoose": "^8.2.3"
+  }
+}
