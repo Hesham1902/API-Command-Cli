@@ -1,10 +1,16 @@
 {
-  "name": "customer-cli",
+  "name": "@pireb/customer-cli",
   "version": "1.0.0",
   "description": "customer managment CLI",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hesham1902/API-Command-Cli.git"
   },
   "author": "",
   "license": "ISC",

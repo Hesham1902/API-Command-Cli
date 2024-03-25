@@ -32,14 +32,14 @@ export const findCustomer = (name) => {
 //List Customers
 export const listCustomers = async () => {
   const customers = await Customer.find();
-  console.info("customers");
+  console.info(customers);
   console.info(`${customers.length} customers`);
   db.disconnect();
 };
 
 // update customers
 export const updateCustomer = (_id, customer) => {
-  Customer.update({ _id }, customer).then((customer) => {
+  Customer.updateOne({ _id }, customer).then((customer) => {
     console.info("Customer Updated");
     db.disconnect();
   });

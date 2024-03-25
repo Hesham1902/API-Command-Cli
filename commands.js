@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from "commander";
 import inquirer from "inquirer";
 import {
@@ -37,13 +39,27 @@ program
   });
 
 //Update Command
-
 program
-  .command("add <_id>")
+  .command("update <_id>")
   .alias("u")
   .description("Update a customer")
-  .action(() => {
+  .action((_id) => {
     inquirer.prompt(questions).then((answers) => updateCustomer(_id, answers));
+  });
+
+// Remove Command
+program
+  .command("remove <_id>")
+  .alias("r")
+  .description("Remove a customer")
+  .action((_id) => removeCustomer(_id));
+
+program
+  .command("list")
+  .alias("ls")
+  .description("List all customers")
+  .action(() => {
+    listCustomers();
   });
 
 program.parse(process.argv);
