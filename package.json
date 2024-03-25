@@ -1,6 +1,6 @@
 {
   "name": "@pireb/customer-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "customer managment CLI",
   "main": "index.js",
   "preferGlobal": true,
