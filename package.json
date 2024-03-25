@@ -1,5 +1,5 @@
 {
-  "name": "@hesham1902/customer-cli",
+  "name": "@pireb/customer-cli",
   "version": "1.0.3",
   "description": "customer managment CLI",
   "main": "index.js",
